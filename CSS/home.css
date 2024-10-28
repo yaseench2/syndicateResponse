@@ -12,7 +12,7 @@
     width: 100%;
     overflow-x: hidden;
     font-family: "Roboto Slab", serif;
-    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    background-image: linear-gradient(120deg, #89f6fec6 0%, #06316c9b 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
  
  /* Contact Form Styles */
  #contact-form {
-    background-color:rgba(58, 55, 69, 0.6);
+    background-color:rgba(11, 8, 20, 0.557);
     padding: 10px 20px 30px 20px;
     max-width:100%;
     margin-top:30px;
