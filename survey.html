@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="contact-form">
+    <div>
+      <h1>Nice to Meet You!</h1> 
+      <h4>Syndicate Openion</h4> 
+    </div>
+     
+         <form id="submit-form" action="">
+        <div>
+            <label for="name">
+              <span class="required">Name:</span> 
+              <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+            </label> 
+        </div>
+        <div>
+            <label for="email">
+              <span class="required">Email/Number:</span>
+              <input type="text" id="email" name="email/number" value="" placeholder="Mail/Number" tabindex="2" required="required" />
+            </label>  
+        </div>
+        <div>             
+          <label for="email">
+            <span class="required">ജാമിഅത്തുൽ ഹിന്ദിൽ നിങ്ങള് കൊണ്ട് വരാൻ ഉദ്ദേശിക്കുന്ന മാറ്റം</span>
+            <textarea id="message" name="answer 1" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+          </label>  
+        </div>
+        <div>             
+            <label for="message">
+              <span class="required">സാമ്പത്തിക പുരോഗതിക്കുള്ള അഭിപ്രായം</span> 
+              <textarea id="message" name="answer 2" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+            </label>  
+        </div>
+        <div>             
+          <label for="message">
+            <span class="required">question number 3</span> 
+            <textarea id="message" name="answer 3" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+          </label>  
+      </div>
+      <div>             
+        <label for="message">
+          <span class="required">question 4</span> 
+          <textarea id="message" name="answer 4" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+        </label>  
+    </div>
+        <div>              
+            <button name="submit" type="submit" id="submit" >SEND</button> 
+        </div>
+         </form>
+  
+    </div>
+    
+</body>
+<script>
+  $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwqQcrCsgdFNb5QO216D5Bx5aE316hfC50ylA87yktTy8qUvJNrWLZcJV9rY-fqoFkk2w/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+</script>
+</html>
