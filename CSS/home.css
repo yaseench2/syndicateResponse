@@ -76,6 +76,7 @@ input {
   font: inherit;
   font-size: 1.125rem;
   padding: 1.35rem 0;
+  overflow: hidden;
 }
 .input-field:focus, .input-field:valid {
   outline: 0;
