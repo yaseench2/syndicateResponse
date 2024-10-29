@@ -8,64 +8,48 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="contact-form">
-    <div>
-      <h1><a class="navbar-brand me-2" href=''>
-        <img
-          src="images/JHAI LOGO 2.png"
-          height="100"
-          alt="jhi Logo"
-          loading="lazy"
-          style="margin-top: -1px;"
-        />
-      </a>
-      </h1>
-    </div>
-     
-         <form id="submit-form" action="">
-        <div>
-            <label for="name">
-              <span class="required">Name:</span> 
-              <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
-            </label> 
-        </div>
-        <div>
-            <label for="email">
-              <span class="required">Email/Number:</span>
-              <input type="text" id="email" name="email/number" value="" placeholder="Mail/Number" tabindex="2" required="required" />
-            </label>  
-        </div>
-        <div>             
-          <label for="email">
-            <span class="required">ജാമിഅത്തുൽ ഹിന്ദിൽ നിങ്ങള് കൊണ്ട് വരാൻ ഉദ്ദേശിക്കുന്ന മാറ്റം</span>
-            <textarea id="message" name="answer 1" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-          </label>  
-        </div>
-        <div>             
-            <label for="message">
-              <span class="required">സാമ്പത്തിക പുരോഗതിക്കുള്ള അഭിപ്രായം</span> 
-              <textarea id="message" name="answer 2" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-            </label>  
-        </div>
-        <div>             
-          <label for="message">
-            <span class="required">ജാമിഅത്തുൽ ഹിന്ദിന്റെ ഓഫീസ്</span> 
-            <textarea id="message" name="answer 3" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-          </label>  
+  <div class="container">
+    <!-- code here -->
+    <div class="card">
+      <div class="card-image">
+        <h2 class="card-heading">
+          <small></small>
+        </h2>
       </div>
-      <div>             
-        <label for="message">
-          <span class="required">question 4</span> 
-          <textarea id="message" name="answer 4" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
-        </label>  
-    </div>
-        <div>              
-            <button name="submit" type="submit" id="submit" >SEND</button> 
+      <form class="card-form" id="submit-form" autocomplete="off">
+        <div class="input">
+          <input type="text" class="input-field" value="" name="name" required />
+          <label class="input-label">Full Name</label>
         </div>
-         </form>
-  
+        <div class="input">
+          <input type="text" class="input-field" value="" name="email/number" required />
+          <label class="input-label">Email/Number</label>
+        </div>
+        <div class="input">
+          <input type="text" class="input-field" value="" name="answer 1" required />
+          <label class="input-label">ജാമിഅത്തുൽ ഹിന്ദിൽ നിങ്ങള് കൊണ്ട് വരാൻ ഉദ്ദേശിക്കുന്ന മാറ്റം</label>
+        </div>
+        <div class="input">
+          <input type="text" class="input-field" value=""  name="answer 2"required />
+          <label class="input-label">സാമ്പത്തിക പുരോഗതിക്കുള്ള അഭിപ്രായം</label>
+        </div>
+        <div class="input">
+          <input type="text" class="input-field" value="" name="answer 3" required />
+          <label class="input-label">ജാമിഅത്തുൽ ഹിന്ദിന്റെ ഓഫീസ്</label>
+        </div>
+        <div class="input">
+          <input type="text" class="input-field" value="" name="answer 4" required />
+          <label class="input-label">Question 4</label>
+        </div>
+        <div class="action">
+          <button class="action-button">Submit</button>
+        </div>
+      </form>
+      <div class="card-info">
+        <p>Thank You For Your Valuable Time And Message</p>
+      </div>
     </div>
-    
+  </div>
 </body>
 <script>
   $("#submit-form").submit((e)=>{
